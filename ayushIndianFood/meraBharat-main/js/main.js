@@ -1,0 +1,57 @@
+$(document).ready(function(){
+    $('.btntwo').click(function(){
+        $('.signup').css('display','flex');
+    })
+    $('#signupbtn').click(function(){
+        $('.signup').css('display','none');
+    })
+    $('#dalmakhani').click(function(){
+        $('#dalmakhanipopup').show();
+    })
+    $('#masaladosa').click(function(){
+        $('#masaladosapopup').show();
+    })
+    $('#vadapav').click(function(){
+        $('#vadapavpopup').show();
+    })
+    $('#dhokla').click(function(){
+        $('#dhoklapopup').show();
+    })
+    $('#panipuri').click(function(){
+        $('#panipuripopup').show();
+    })
+    $('#biryani').click(function(){
+        $('#biryanipopup').show();
+    })
+    $('#masalachai').click(function(){
+        $('#masalachaipopup').show();
+    })
+    $('#masaladosa').click(function(){
+        $('#masaladosapopup').show();
+    })
+    $('#kashmir').click(function(){
+        $('#kashmirpopup').show();
+    })
+    $('#punjab').click(function(){
+        $('#punjabpopup').show();
+    })
+    $('#kerala').click(function(){
+        $('#keralapopup').show();
+    })
+    $('#bihar').click(function(){
+        $('#biharpopup').show();
+    })
+   
+    $('.placebtn').click(function(){
+        $(this).css('background-color','white');
+        $(this).css('color','black');
+        $(this).css('border','1px solid green');
+    })
+    $('.btnclose').click(function(){
+        $('.popup').hide();
+    })
+    $('.placeclosebtn').click(function(){
+        alert('Food Booked Successfully');
+        $('.popup').hide();
+    })
+})

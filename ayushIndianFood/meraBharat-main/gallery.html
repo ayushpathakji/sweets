@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <img
+        src="images/gallerybanner.jpg"
+        alt=""
+      />
+      <header>
+        <nav>
+          <div class="logo"><h1 style="font-size: 20px">PATHAK SWEETS</h1></div>
+          <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- ===================BEAUTIES STARTS HERE================ -->
+    <div class="subheading">Discover the Beauty of India</div>
+    <div class="image-slider">
+      <div class="slides" id="bihar">
+        <img
+          src="images/cq5dam.web.480.480 (5).jpeg"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Bihar</h3>
+       <button id="bihar">Visit</button>
+        </div>
+      </div>
+
+      <div class="slides" id="kerala">
+        <img src="images/keralaposter.jpg" alt="" />
+        <div class="overlay">
+          <h3>Kerala</h3>
+          <button>Visit</button>
+        </div>
+      </div>
+
+      <div class="slides" id="punjab">
+        <img src="images/punjabposter.jpg" alt="" />
+        <div class="overlay">
+          <h3>Punjab</h3>
+          <button id="punjab">Visit</button>
+        </div>
+      </div>
+      <div class="slides" id="kashmir">
+        <img src="images/kashmirposter.jpg" alt="" />
+        <div class="overlay">
+          <h3>Kashmir</h3>
+          <button id="kashmir">Visit</button>
+        </div>
+      </div>
+    </div>
+    <!-- ===============================DELICACIES OF INDIA STARTS HERE============ -->
+    <div class="subheading">Discover the Delicacies of India</div>
+    <div class="image-slider">
+      <div class="slides">
+        <img
+          src="images/Screenshot 2023-10-31 220958.png"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Dal Makhani</h3>
+          <button class="foodbtn" id="dalmakhani">Learn More</button>
+        </div>
+      </div>
+
+      <div class="slides">
+        <img
+          src="images/vada-pav-2.jpg"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Vada Pav</h3>
+          <button class="foodbtn" id="vadapav">Learn More</button>
+        </div>
+      </div>
+
+      <div class="slides">
+        <img
+          src="images/1200x1200-khaman-dhokla.jpg"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Dhokla</h3>
+          <button class="foodbtn" id="dhokla">Learn More</button>
+        </div>
+      </div>
+      <div class="slides">
+        <img
+          src="images/pani-puri-featured.jpg"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Pani Puri</h3>
+          <button class="foodbtn" id="panipuri">Learn More</button>
+        </div>
+      </div>
+      <div class="slides">
+        <img
+          src="images/chicken-biryani.jpg"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Biryani</h3>
+          <button class="foodbtn" id="biryani">Learn More</button>
+        </div>
+      </div>
+      <div class="slides">
+        <img
+          src="images/Masala-Chai.webp"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Masala Chai</h3>
+          <button class="foodbtn" id="masalachai">Learn More</button>
+        </div>
+      </div>
+      <div class="slides">
+        <img
+          src="images/Masala-Dosa-500x500.jpg"
+          alt=""
+        />
+        <div class="overlay">
+          <h3>Masala Dosa</h3>
+          <button class="foodbtn" id="masaladosa">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <!-- ================================delicacies ends here=============== -->
+
+    <!-- ===========dal makhani popup starts here  -->
+    <div class="popup" id="dalmakhanipopup">
+      <div class="popupImage">
+        <img
+          src="images/Screenshot 2023-10-31 220958.png"
+          alt=""
+        />
+      </div>
+      <h3>DAL MAKHANI</h3>
+      <p>
+        Most foodies will have heard of or tasted dal, but there’s nothing quite
+        like tasting the original dish in the country where it originated from.
+        Dal is the Hindi word for lentils, and this soup-like delicacy is made
+        by stewing small black lentils for hours on end. Whilst there are many
+        different varieties of this lentil dish, dal makhani is in a league of
+        its own. It’s considered the best of the best, and is reserved for big
+        events like wedding celebrations. With makhani meaning ‘buttery’ in
+        Hindi, there’s no prizes for guessing how rich and creamy this Indian
+        classic tastes. Head to Punjab, in India’s north, to taste the real
+        deal.
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+    <!-- =================================masala dosa pop up starts here================ -->
+
+    <div class="popup" id="masaladosapopup">
+      <div class="popupImage">
+        <img
+          src="images/Masala-Dosa-500x500.jpg"
+          alt=""
+        />
+      </div>
+      <h3>MASALA DOSA</h3>
+      <p>
+        Arguably South India’s most renowned culinary export, masala dosas are
+        famous the world over. A sort of Indian pancake, dosas are made from a
+        thin batter consisting of rice, flour and lentils. Making dosas is no
+        easy task, with the batter mixture having to soak in water for at least
+        24 hours before it can be shaped. Once ready, the batter is ladled onto
+        a hot tava (griddle pan) and shaped in a similar way to how the French
+        would shape a crepe. Traditionally, dosas are served folded in half and
+        stuffed with potatoes. Accompaniments like hot sambar give the dish a
+        spicy edge, and whatever you stuff them with, dosas are sure to provide
+        a tasty yet satisfying meal.
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+    <!-- ================================vada pav strts here=========== -->
+    <div class="popup" id="vadapavpopup">
+      <div class="popupImage">
+        <img
+          src="images/vada-pav-2.jpg"
+          alt=""
+        />
+      </div>
+      <h3>VADA PAV</h3>
+      <p>
+        Originating in the traditionally vegetarian state of Maharashtra, vada
+        pav is as close as Indian cuisine gets to veggie burgers. One for carb
+        lovers, vada pav consists of a deep fried potato dumpling placed neatly
+        inside a small bun. The finger food delicacy is generally accompanied by
+        a couple of chutneys and a green chilli, to appeal to the spice loving
+        palettes of Indians up and down the country. Also called a Bombay
+        burger, these mini potato buns can be found in street food stalls across
+        the city of Mumbai.
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+
+    <!-- =======================DHOKLA POPUP STARTS HERE========== -->
+    <div class="popup" id="dhoklapopup">
+      <div class="popupImage">
+        <img
+          src="images/1200x1200-khaman-dhokla.jpg"
+          alt=""
+        />
+      </div>
+      <h3>DHOKLA</h3>
+      <p>
+        Hailed as the regional dish of northwest India, the Gujarati delicacy
+        dhokla is a savoury vegetarian snack made of rice and split chickpeas.
+        It’s tastier than it sounds – Gujaratis eat it for breakfast or lunch,
+        and sometimes even as a snack or side dish. Another dish that takes
+        hours of preparation, dhokla involves soaking the rice and split
+        chickpeas in equal quantities overnight. Then, chilli, coriander, ginger
+        and baking soda are added to add spice to the dish, and help it rise
+        into delicious bite size morsels. Usually served alongside deep fried
+        chilli and coriander chutney, this Gujarati delicacy is wonderfully
+        moreish.
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+
+    <!-- ================pani PURI POPUP STARTS HERE=========== -->
+    <div class="popup" id="panipuripopup">
+      <div class="popupImage">
+        <img
+          src="images/pani-puri-featured.jpg"
+          alt=""
+        />
+      </div>
+      <h3>PANI PURI</h3>
+      <p>
+        Pani puri, or gol guppa, are thought to originate from the northern
+        state of Bihar. A perfect streetside snack, pani puri are hollow deep
+        fried balls made of semolina or wheat. They’re served alongside spicy
+        potatoes, chickpeas and a spicy tamarind water. Eating pani puri is an
+        experience in itself, as you traditionally crack open the top of the
+        deep fried shell with a spoon before filling it with the delicious
+        accompaniments. Most Indians eat each pani puri with one swift bite, to
+        save any of the filling spilling out of the delicate case. This infamous
+        street snack unites most of the country – everyone from local college
+        students to city businessmen can be found devouring them.
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+
+    <!-- ==================BIRYANI POPUP STARTS HERE =============== -->
+    <div class="popup" id="biryanipopup">
+      <div class="popupImage">
+        <img
+          src="images/chicken-biryani.jpg"
+          alt=""
+        />
+      </div>
+      <h3>BIRYANI</h3>
+      <p>
+        Indian Biryani is a flavorful and aromatic rice dish that originates
+        from the Indian subcontinent. It is a beloved culinary treasure, known
+        for its rich blend of spices, tender meat, and fragrant basmati rice.
+        Biryani typically includes marinated meat, such as chicken, mutton, or
+        fish, layered with partially cooked rice and a medley of spices like
+        cumin, coriander, cardamom, and saffron. The dish often features fried
+        onions, boiled eggs, and fresh coriander leaves as garnishes. Biryani is
+        prepared using various regional techniques and recipes across India,
+        leading to diverse and unique styles, such as Hyderabadi, Lucknowi, and
+        Kolkata Biryani. Served with cooling raita (yogurt-based side dish) or
+        salad.
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+    <!-- ========================MASALA CHAI STARTS HERE====== -->
+    <div class="popup" id="masalachaipopup">
+      <div class="popupImage">
+        <img
+          src="images/Masala-Chai.webp"
+          alt=""
+        />
+      </div>
+      <h3>MASALA CHAI</h3>
+      <p>
+        India’s most famous export, masala chai can be found being sold by
+        everywhere from high end restaurants to chaiwallas at train stations.
+        While there’s many different diluted versions of this classic Indian tea
+        around the globe, the real deal can only be found in India. Authentic
+        masala chai is made by brewing black tea on the stove with a mixture of
+        aromatic spices and herbs. Traditionally, the spices used are green
+        cardamom pods, cinnamon sticks, ground cloves and black pepper, creating
+        a wonderful aromatic cup of tea. There’s nothing quite like sipping a
+        hot cup of authentic masala chai first thing in the morning!
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+    <!-- ==========MASALA DOSA STARTS HERE ========= -->
+    <div class="popup" id="masaladosapopup">
+      <div class="popupImage">
+        <img
+          src="images/Masala-Dosa-500x500.jpg"
+          alt=""
+        />
+      </div>
+      <h3>MASALA DOSA</h3>
+      <p>
+        Arguably South India’s most renowned culinary export, masala dosas are
+        famous the world over. A sort of Indian pancake, dosas are made from a
+        thin batter consisting of rice, flour and lentils. Making dosas is no
+        easy task, with the batter mixture having to soak in water for at least
+        24 hours before it can be shaped. Once ready, the batter is ladled onto
+        a hot tava (griddle pan) and shaped in a similar way to how the French
+        would shape a crepe. Traditionally, dosas are served folded in half and
+        stuffed with potatoes. Accompaniments like hot sambar give the dish a
+        spicy edge, and whatever you stuff them with, dosas are sure to provide
+        a tasty yet satisfying meal.
+      </p>
+      <button class="btnclose">Close</button>
+    </div>
+    <!-- ============================kashmir popup starts here============ -->
+    <div class="popup" id="kashmirpopup">
+      <h2>Choose destinations</h2>
+      <div class="places">
+        
+        <button class="placebtn">Srinagar</button>
+        <button class="placebtn">Gulmarg</button>
+        <button class="placebtn">Pahalgam</button>
+      </div>
+      <h2>Choose Duration</h2>
+      <div class="places">
+       
+        <button class="placebtn">1 Week</button>
+        <button class="placebtn">2 Week</button>
+        <button class="placebtn">1 Month</button>
+      </div>
+      <h2>Choose Persons</h2>
+
+      <div class="places">
+       
+        <button class="placebtn">1</button>
+        <button class="placebtn">2</button>
+        <button class="placebtn">3</button>
+        <button class="placebtn">4</button>
+      </div>
+      <button class="placeclosebtn">Book</button>
+    </div>
+    <!-- ==============PUNJAB POPUP STARTS HERE=============== -->
+    <div class="popup" id="punjabpopup">
+      <h2>Choose destinations</h2>
+      <div class="places">
+        
+        <button class="placebtn">Ludhiana</button>
+        <button class="placebtn">Jallian Wala Bagh</button>
+        <button class="placebtn">Amritsar</button>
+      </div>
+      <h2>Choose Duration</h2>
+      <div class="places">
+       
+        <button class="placebtn">1 Week</button>
+        <button class="placebtn">2 Week</button>
+        <button class="placebtn">1 Month</button>
+      </div>
+      <h2>Choose Persons</h2>
+
+      <div class="places">
+       
+        <button class="placebtn">1</button>
+        <button class="placebtn">2</button>
+        <button class="placebtn">3</button>
+        <button class="placebtn">4</button>
+      </div>
+      <button class="placeclosebtn">Book</button>
+    </div>
+    <!-- ==============KERALA POPUP STARTS HERE=============== -->
+    <div class="popup" id="keralapopup">
+      <h2>Choose destinations</h2>
+      <div class="places">
+        
+        <button class="placebtn">Munnar</button>
+        <button class="placebtn">Wayanand</button>
+        <button class="placebtn">Kochi</button>
+      </div>
+      <h2>Choose Duration</h2>
+      <div class="places">
+       
+        <button class="placebtn">1 Week</button>
+        <button class="placebtn">2 Week</button>
+        <button class="placebtn">1 Month</button>
+      </div>
+      <h2>Choose Persons</h2>
+
+      <div class="places">
+       
+        <button class="placebtn">1</button>
+        <button class="placebtn">2</button>
+        <button class="placebtn">3</button>
+        <button class="placebtn">4</button>
+      </div>
+      <button class="placeclosebtn">Book</button>
+    </div>
+    <!-- ==============Bihar POPUP STARTS HERE=============== -->
+    <div class="popup" id="biharpopup">
+      <h2>Choose destinations</h2>
+      <div class="places">
+        
+        <button class="placebtn">Patna</button>
+        <button class="placebtn">Vaishali</button>
+        <button class="placebtn">Bodhgaya</button>
+      </div>
+      <h2>Choose Duration</h2>
+      <div class="places">
+       
+        <button class="placebtn">1 Week</button>
+        <button class="placebtn">2 Week</button>
+        <button class="placebtn">1 Month</button>
+      </div>
+      <h2>Choose Persons</h2>
+
+      <div class="places">
+       
+        <button class="placebtn">1</button>
+        <button class="placebtn">2</button>
+        <button class="placebtn">3</button>
+        <button class="placebtn">4</button>
+      </div>
+      <button class="placeclosebtn">Book</button>
+    </div>
+  </body>
+</html>
